@@ -12,7 +12,10 @@
 
 start() ->
 	application:start(sasl),
+
 	application:start(mnesia),
+	application:set_env(mnesia, dir, "/jabberling/db"),
+
 	application:start(crypto),
 	application:start(public_key),
 	application:start(ssl),

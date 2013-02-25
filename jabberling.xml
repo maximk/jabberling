@@ -7,7 +7,7 @@
   <os>
     <type>linux</type>
     <kernel>/root/images/jabberling.img</kernel>
-	<cmdline>-ipaddr 192.168.0.99 -netmask 255.255.255.0 -gateway 192.168.0.1 -root /erlang -pz /jabberling/ebin -pz /jabberling/deps/ejabberd/ebin -pz /jabberling/deps/stringprep/ebin -home /jabberling -s jabberling_app</cmdline>
+	<cmdline>-secret 6c8e4146840f01767cb61fb5d97e9adab0c9e0a1 17685f20d43d4cabde39f1769d402d801bc95bdc -ipaddr 192.168.0.99 -netmask 255.255.255.0 -gateway 192.168.0.1 -9p 192.168.0.2 /home/mk/jabberling/db /jabberling/db -root /erlang -pz /jabberling/ebin -pz /jabberling/deps/ejabberd/ebin -pz /jabberling/deps/stringprep/ebin -home /jabberling -s jabberling_app</cmdline>
   </os>
   <clock offset='utc' adjustment='reset'/>
   <on_poweroff>destroy</on_poweroff>

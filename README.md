@@ -59,5 +59,11 @@ it produces a deprecated message (and is noop).
 * mnesia
 
 Mnesia creates a subdirectory in the project directory. The project directory is
-not writable. Stuck.
+not writable. A writable directory is mounted over 9p and designated as a
+database directory to Mnesia.
+
+* current
+
+application:start(ejabberd) returns error about inability to read Mnesia
+database.
 
