@@ -38,5 +38,25 @@ ejabberd.app.
 * db\_init
 
 ejabberd\_app:db\_init restarts mnesia. Calling application:stop(mnesia) leads
-to a complete shutdown. Stuck.
+to a complete shutdown. The shutdown was due to a bug in process\_info(\_,
+group\_leader). mnesia restarts cleanly now.
+
+* sha
+
+Module sha loads a driver. sha.erl heavily edited to use standard crypto:\*
+routines and not load the driver.
+
+* xml
+
+A possibility to use --enable-nif removed in xml.erl. File xml.c removed.
+
+* drivers
+
+The start sequence starts tls\_drv and expat\_erl drivers. The line is
+commented out. Another line that loads ASN1.0 driver commented out too because
+it produces a deprecated message (and is noop).
+
+* ejabberd.cfg
+
+The configuration file have to be placed in a subdirectory (priv).
 
