@@ -56,7 +56,8 @@ The start sequence starts tls\_drv and expat\_erl drivers. The line is
 commented out. Another line that loads ASN1.0 driver commented out too because
 it produces a deprecated message (and is noop).
 
-* ejabberd.cfg
+* mnesia
 
-The configuration file have to be placed in a subdirectory (priv).
+Mnesia creates a subdirectory in the project directory. The project directory is
+not writable. Stuck.
 
