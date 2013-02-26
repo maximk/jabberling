@@ -71,5 +71,11 @@ processors. system\_info(logical\_processors) always returns 1.
 
 * starts
 
-ejabberd now starts. I am unable to add the first user (admin).
+ejabberd now starts. The admin user is added and admin console is accessible at
+port 5280.
+
+* expat
+
+A c2s listener is configured on c2s. An attempt to connect fails because expat
+driver is not present/known. Stuck.
 
