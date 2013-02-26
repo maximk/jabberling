@@ -69,3 +69,7 @@ When opening a listening socket it sets the send timeout. The TCP driver updated
 to support the option fully. mod\_caps wants to know the number of logical
 processors. system\_info(logical\_processors) always returns 1.
 
+* starts
+
+ejabberd now starts. I am unable to add the first user (admin).
+
