@@ -62,8 +62,10 @@ Mnesia creates a subdirectory in the project directory. The project directory is
 not writable. A writable directory is mounted over 9p and designated as a
 database directory to Mnesia.
 
-* current
+* missing
 
-application:start(ejabberd) returns error about inability to read Mnesia
-database.
+ejabberd uses system\monitor() functions. Functions are stubbed and do nothing.
+When opening a listening socket it sets the send timeout. The TCP driver updated
+to support the option fully. mod\_caps wants to know the number of logical
+processors. system\_info(logical\_processors) always returns 1.
 

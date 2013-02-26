@@ -20,6 +20,9 @@ start() ->
 	application:start(public_key),
 	application:start(ssl),
 	application:start(stringprep),
+
+	application:start(ejabberd),
+
 	application:start(jabberling).
 
 start(_StartType, _StartArgs) ->
