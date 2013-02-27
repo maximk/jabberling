@@ -2,5 +2,7 @@ deps
 ebin
 db
 
+scratch
+
 vmling
-vmling.save
+mling.save
