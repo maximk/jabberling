@@ -77,5 +77,13 @@ port 5280.
 * expat
 
 A c2s listener is configured on c2s. An attempt to connect fails because expat
-driver is not present/known. Stuck.
+driver is not present/known. xml\_stream.erl reimplemented using xmerl as
+xmerl\_sax\_parser offers functionality almost identical to the expat driver.
 
+* tls
+
+tls driver hit upon connection attempt. tls and starttls removed from the
+listener to enable unencrypted connection. After a couple of more bugs it is now
+possible to login to the server.
+
+* DONE
